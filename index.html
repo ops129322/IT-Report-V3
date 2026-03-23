@@ -3,7 +3,7 @@ const API_URL = "https://script.google.com/a/macros/spxexpress.com/s/AKfycbyDZ4M
 
 // 2. Hàm gọi dữ liệu dùng chung (Vượt rào cản CORS)
 async function callGoogle(params) {
-    const url = API_URL + "?" + new URLSearchParams(params);
+    const url = API_URL + "https://script.google.com/a/macros/spxexpress.com/s/AKfycbyDZ4MMWygVMwf_yuhCor-K9_CIALWt4IJxPyDNfQupSxjHR2NB-4OgVHdpWH604O8o/exec" + new URLSearchParams(params);
     // Dùng mode: 'no-cors' hoặc fetch thông thường qua URLSearchParams
     const res = await fetch(url);
     return await res.json();
